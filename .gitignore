@@ -1,3 +1,4 @@
 *.tmp
 cache/*
 .git/*
+.DS_Store

@@ -1,4 +1,9 @@
 *.tmp
 cache/*
 .git/*
-.DS_Store
+*.DS_Store
+node_modules/*
+js/dist/*
+stylesheets/*
+master
+FrontEndProject/*

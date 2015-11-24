@@ -4,6 +4,7 @@ cache/*
 *.DS_Store
 node_modules/*
 js/dist/*
-stylesheets/main.css
+stylesheets/app.css
 master
 FrontEndProject/*
+assets/storage/*

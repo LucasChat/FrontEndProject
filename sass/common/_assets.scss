@@ -1,0 +1,59 @@
+
+
+	/* FONTS */
+
+
+	// Oblong
+
+	@font-face {
+
+		font-family: 'Oblong';
+ 		src:url('../assets/medias/fonts/oblong/oblong.eot?#iefix') format('embedded-opentype'),
+	     	url('../assets/medias/fonts/oblong/oblong.woff') format('woff'), 
+	     	url('../assets/medias/fonts/oblong/oblong.ttf')  format('truetype'), 
+	     	url('../assets/medias/fonts/oblong/oblong.svg#Gotham-Bold') format('svg');
+  		font-weight: normal;
+  		font-style: normal;
+
+	}
+
+
+	// Gotham
+
+	@font-face {
+
+		font-family: 'Gotham';
+ 		src:url('../assets/medias/fonts/gotham/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+	     	url('../assets/medias/fonts/gotham/Gotham-Book.woff') format('woff'), 
+	     	url('../assets/medias/fonts/gotham/Gotham-Book.ttf')  format('truetype'), 
+	     	url('../assets/medias/fonts/gotham/Gotham-Book.svg#Gotham-Bold') format('svg');
+  		font-weight: normal;
+  		font-style: normal;
+
+	}
+	
+	@font-face {
+
+		font-family: 'Gotham';
+ 		src:url('../assets/medias/fonts/gotham/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+ 			url('../assets/medias/fonts/gotham/Gotham-Medium.otf')  format('opentype'),
+	     	url('../assets/medias/fonts/gotham/Gotham-Medium.woff') format('woff'), 
+	     	url('../assets/medias/fonts/gotham/Gotham-Medium.ttf')  format('truetype'), 
+	     	url('../assets/medias/fonts/gotham/Gotham-Medium.svg#Gotham-Bold') format('svg');
+  		font-weight: 700;
+  		font-style: normal;
+
+	}
+
+	@font-face {
+
+		font-family: 'Gotham';
+ 		src:url('../assets/medias/fonts/gotham/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+ 			url('../assets/medias/fonts/gotham/Gotham-Bold.otf')  format('opentype'),
+	     	url('../assets/medias/fonts/gotham/Gotham-Bold.woff') format('woff'), 
+	     	url('../assets/medias/fonts/gotham/Gotham-Bold.ttf')  format('truetype'), 
+	     	url('../assets/medias/fonts/gotham/Gotham-Bold.svg#Gotham-Bold') format('svg');
+  		font-weight: 900;
+  		font-style: normal;
+
+	}

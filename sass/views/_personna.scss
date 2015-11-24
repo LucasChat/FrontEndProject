@@ -1,0 +1,113 @@
+	
+
+
+	/* LAYOUT */
+
+	&{
+
+		position:absolute;
+		z-index:300;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color:$dark;
+
+		.background{
+
+			position:absolute;
+			z-index:310;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-size:cover;
+			background-position:right;
+			background-repeat: no-repeat;
+
+			&:after{
+				
+				content:'';
+				position:absolute;
+				z-index:320;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				background-image:url(../assets/medias/images/filter_dark.svg);
+				background-size:cover;
+				background-position:center;
+				background-repeat: no-repeat;
+
+			}
+
+		}
+
+		.page-container{
+
+			position:absolute;
+			z-index:350;
+			top:0;
+			right:0;
+			width:30rem;
+			height:100%;
+			padding-top:$padding + 10rem;
+			padding-right:$padding + 1.5rem;
+			padding-bottom:$padding;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			text-align: right;
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+	/* STYLES */
+
+
+	&{
+
+		.personna-name{
+
+			margin-top:50%;
+			font-size:3rem;
+			font-weight: 700;
+			margin-bottom:0.8rem;
+
+		}
+
+		.personna-location{
+			
+			display: inline-block;
+			font-size:1.2rem;
+			text-transform: uppercase;
+			color:rgba($light, 0.6);
+			border-bottom:3px solid $light;
+			padding-bottom:6rem;
+			margin-bottom:3rem;
+
+		}
+
+		.personna-description{
+
+			font-size:1.2rem;
+			color:rgba($light, 0.8);
+			line-height:1.3;
+			margin-bottom:4rem;			
+
+		}
+
+		.btn-continue{
+
+			margin-bottom:3rem;
+
+		}
+
+	}

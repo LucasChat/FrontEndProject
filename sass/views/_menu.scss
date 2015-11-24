@@ -1,0 +1,277 @@
+
+
+	/* LAYOUT */
+
+
+	&{
+		
+		display: flex;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;	
+		position:absolute;
+		z-index:500;
+		visibility: hidden;
+		// transition:background-image 0.1s ease;
+
+		&:before{
+
+			display: block;
+			content:'';
+			flex:1;
+
+		}
+
+		&:after{
+			
+			display: block;
+			content:'';
+			position:absolute;
+			z-index:510;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-image:url(../assets/medias/images/filter_very_dark.svg);
+			background-size:cover;
+			background-position:center;
+			background-repeat: no-repeat;
+
+		}
+
+		.btn-full-screen{
+			
+			display: none;
+			position:absolute;
+			z-index:600;
+			top:$padding + 0.5rem;
+			right:2*$padding + 3.5rem;
+			width:3rem;
+			height:3rem;
+			padding:0;
+
+			i.icon-full-screen{
+
+				position:absolute;
+				width:3rem;
+				height:3rem;
+				top:0.4rem;
+				left:0rem;
+				background-image:url(../assets/medias/images/full-screen.svg);
+				background-size:cover;
+				background-position:center;
+				background-repeat: no-repeat;
+
+			}
+
+		}
+
+		.page-container{
+			
+			display: flex;
+			opacity:0;
+			align-items: center;
+			justify-content:center;
+			position:relative;
+			z-index:550;
+			width:100%;
+			height:auto;
+
+			svg{
+
+				position:absolute;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:-1;
+
+				line{
+
+					stroke: rgba($light, 0.8);
+					stroke-width: 2;
+
+				}
+
+			}
+
+			.circle{
+				
+				display: flex;
+				justify-content:center;
+				align-items:center;
+				color:$main;
+				font-weight: 700;
+				width: 3rem;
+				height: 3rem;
+				background-color: #FFF;
+				margin-bottom:5rem;
+				border-radius:50%;
+				cursor:pointer;
+				transition:all 0.2s ease;
+
+
+				// Hover
+
+				&:hover{
+
+					background-color:$main;
+					color:$light;
+
+				}
+
+			}
+
+			.menu-element {
+
+				display: flex;
+				width: 100px;
+				height:100%;
+				text-align: center;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+			
+			}
+
+		}
+
+		.page-menu-hover{
+			
+			width:100%;
+			opacity:0;
+			flex:1;
+			padding:0 2.5rem;
+			position: relative;
+			z-index:550;
+			
+			.chapter-name{
+				
+				display: block;
+				font-size:2rem;
+				font-weight:700;
+				margin-bottom:1rem;
+
+			}
+
+			.chapter-introduction{
+
+				
+
+			}
+
+		}
+
+		p.disclaimer{
+
+			position:absolute;
+			width:100%;
+			text-align:center;
+			z-index:600;
+			bottom:0.5rem;
+			left:0.5rem;
+			color:rgba($light, 0.5);
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+	/* STYLES */
+
+
+	&{
+
+		background-image:url(../assets/medias/images/test_couverture_chapter.jpg);
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+
+	}
+
+
+
+
+
+
+
+
+
+	/* ANIMATIONS */
+
+
+	// Show
+
+	&.show{
+
+		visibility: visible;
+		animation-name:FadeIn;
+		animation-duration:0.3s;
+		animation-timing-function:ease;
+		animation-fill-mode:both;
+
+		.page-container, .page-menu-hover, .btn-full-screen{
+			
+			animation-name:SlideInBottom;
+			animation-duration:0.4s;
+			animation-delay:0.2s;
+			animation-timing-function:ease;
+			animation-fill-mode:both;
+
+		}
+
+		.page-menu-hover{
+
+			animation-delay:0.3s;
+
+		}
+
+		.btn-full-screen{
+			
+			display: inline-block;
+			animation-delay:0.1s;
+
+		}
+
+	}
+
+	&.hide{
+
+		visibility: visible;
+		animation-name:FadeOut;
+		animation-duration:0.4s;
+		animation-delay:0.3s;
+		animation-timing-function:ease;
+		animation-fill-mode:both;
+
+		.page-container, .page-menu-hover, .btn-full-screen{
+
+			animation-name:SlideOutBottom;
+			animation-duration:0.4s;
+			animation-delay:0.1s;
+			animation-timing-function:ease;
+			animation-fill-mode:both;
+
+		}
+
+		.page-menu-hover{
+
+			animation-delay:0s;
+
+		}
+
+		.btn-full-screen{
+			
+			visibility: hidden;
+			animation-delay:0.2s;
+
+		}
+
+	}

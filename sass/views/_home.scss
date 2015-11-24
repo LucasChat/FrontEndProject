@@ -1,0 +1,149 @@
+
+
+	/* LAYOUT */
+
+
+	&{
+		
+		display: none;
+		justify-content:center;
+		text-align:center;
+		position:absolute;
+		z-index:400;
+		padding-top:6rem;
+
+		
+		// Container
+
+		.page-container{
+			
+			width:50rem;
+			margin:auto;
+			padding:2rem;
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+	/* STYLES */
+
+
+	&{
+		
+		background-image:url(../assets/medias/images/couverture.jpg);
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		
+		// Title
+
+		.page-home-title{
+			
+			width:60rem;
+			position:relative;
+			right:7rem;
+			font-family: $font-thematic;
+			font-size:8rem;
+			text-transform: uppercase;
+			text-shadow:1px 1px 1px rgba($dark, 0.4);
+			margin-bottom:0.5rem;
+
+		}
+
+
+		// Text
+
+		.page-home-text{
+
+			font-size:1.2rem;
+			line-height: 1.2;
+			font-weight: 700;
+			text-shadow:1px 1px 1px rgba($dark, 0.4);
+			margin-bottom:4rem;
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+	/* ANIMATIONS */
+
+
+	// Show
+
+	&.show{
+
+		display: flex;
+
+		.page-home-title, .page-home-text, .btn-launch{
+
+			animation-name:SlideInBottom;
+			animation-duration:$animation-slide-duration;
+			animation-delay:0.4s;
+			animation-timing-function:ease;
+			animation-fill-mode:both;
+
+		}
+
+		.page-home-text{
+
+			animation-delay:0.45s;
+
+		}
+
+		.btn-launch{
+
+			animation-delay: 0.5s;
+
+		}
+
+	}
+
+
+	// Hide
+
+	&.hide{
+
+		display: flex;
+		animation-name: NextChapterLeave;
+		animation-duration: $animation-chapter-media-duration;
+		animation-timing-function:ease;
+		animation-fill-mode:both;
+
+		.page-home-title, .page-home-text, .btn-launch{
+
+			animation-name:SlideOutRight;
+			animation-duration:0.4s;
+			animation-delay:0s;
+			animation-timing-function:ease;
+			animation-fill-mode:both;
+
+		}
+
+		.page-home-text{
+
+			animation-delay:0.1s;
+
+		}
+
+		.btn-launch{
+
+			animation-delay: 0.2s;
+
+		}
+
+	}

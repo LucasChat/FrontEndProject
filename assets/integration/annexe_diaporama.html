@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<style>
+		html, body{ width:100%; height:100%; margin:0; padding:0; border:none;}
+		main{ position:absolute; top:0; left:0; width:100%; height:100%; overflow: hidden; }
+		.loader{ position:absolute; top:0; left:0; width:100%; height:100%; background-image:url(../medias/images/couverture.jpg); background-size:cover; background-position:center; background-repeat: no-repeat; -webkit-filter:grayscale(0); -moz-filter:grascale(1); -o-filter:grayscale(1); -ms-filter:grayscale(1); filter:grayscale(100); -webkit-transition:all 0.3s ease; transition:all 0.3s ease;}
+		.loader-content{ box-sizing:border-box; position:absolute; top:50%; left:50%; width:150px; height:200px; margin-top:-100px; margin-left:-75px; padding:20px; }
+		.loader-content .holi-text{ display: block; width:100%; height:auto; padding-bottom:30px; border-bottom:4px solid #FEFEFE; }
+		.loader-content .loader-percentage{ display: block; text-align:center; font-family:Gotham, Helvetica; color:#FEFEFE; font-size:25px; margin-top:25px; }
+		.loader-content .loader-percentage:after{ content:'%'; font-size:20px; margin-left:5px; }
+		.loader-content svg{ position:absolute; top:0; left:0; }
+		.loader-content svg rect{ transition: all 0.3s ease; }
+	</style>
+	<link rel="stylesheet" href="../styles/css/app.css">
+</head>
+<body>
+
+	<header class="header" style="display:block;">
+		
+		<img src="../medias/images/logo_blanc.png" alt="" class="header-logo">
+		<div class="header-title">
+			<h1 class="header-chapter-name">L'embarquement</h1>
+			<h2 class="header-chapter-mark">Chapitre 1</h2>
+		</div>
+
+	</header>
+
+	<nav class="timeline" style="display:block;">
+			
+		<div class="timeline-container">
+			
+			<a href="#" class="timeline-menu-button">
+				<span></span>
+			</a>
+			<a href="#" class="timeline-chapter-mark">1</a>
+
+			<div class="timeline-progress">
+				<div class="timeline-progress-track">
+					<span class="timeline-progress-bar"></span>
+				</div>
+				<div class="timeline-progress-docs">
+					<a class="selected" href="#" style="display: block; bottom: 100px;"><span><span>La nourriture</span></span></a>
+				</div>
+			</div>
+
+		</div>
+
+	</nav>
+
+	<main class="main">
+
+		<div class="page page-chapter page-chapter-video showed">
+			
+			<video class="page-chapter-media">
+				<source type="video/mp4" src="../../storage/1/video_chapitre_1.mp4">
+			</video>
+
+		</div>
+		
+		<div class="page page-annexe page-annexe-diaporama" style="display:block;">
+			
+			<a href="#" class="btn btn-primary btn-back">Retour</a>
+			<div class="diaporama-controls">
+				<a href="#" class="btn btn-primary btn-previous"><i class="icon-previous"></i></i></a>
+				<a href="#" class="btn btn-primary btn-next"><i class="icon-next"></i></i></a>
+				<a href="#" class="btn btn-primary btn-continue">Continue</a>
+			</div>
+
+			<div class="page-annexe-media page-annexe-slider">
+				<div class="slide" style="background-image:url(../../storage/1/annexe_1/2.jpg);"></div>
+				<div class="slide slide-content" style="background-image:url(../../storage/1/annexe_1/1.jpg);">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit perferendis culpa facilis! Modi minus cumque doloribus odio veritatis eveniet dolorum necessitatibus, consectetur quisquam optio aut similique dignissimos tempore eligendi quaerat.</p>
+				</div>
+				<div class="slide" style="background-image:url(../../storage/1/annexe_1/2.jpg);"></div>
+			</div>
+
+		</div>
+
+	</main>
+	
+</body>
+</html>
+
+<script src="../../vendors/js/jquery.js"></script>
+<script>
+	
+	$(document).ready(function ()
+	{
+
+
+		var video = $('.page-chapter video').get(0);
+		console.log(video);
+		video.currentTime = 30;
+
+		$('.btn-next').click(function (e)
+		{
+			$('.slide:nth-child(1)').css('transform', 'translateX(-100%)');
+			$('.slide:nth-child(2)').css('transform', 'translateX(0px)');
+		});
+
+		$('.btn-previous').click(function (e)
+		{
+			$('.slide:nth-child(1)').css('transform', 'translateX(0px)');
+			$('.slide:nth-child(2)').css('transform', 'translateX(100%)');
+		});
+
+		// setTimeout(function ()
+		// {
+		// 	$('.page-annexe').addClass('show');
+		// }, 2000);
+
+		// setTimeout(function ()
+		// {
+		// 	$('.page-annexe').addClass('hide');
+		// }, 5000);
+
+
+	});
+
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HOME</title>
+	<style>
+		html, body{ width:100%; height:100%; margin:0; padding:0; border:none;}
+		main{ position:absolute; top:0; left:0; width:100%; height:100%; overflow: hidden; }
+		.loader{ position:absolute; top:0; left:0; width:100%; height:100%; background-image:url(../medias/images/couverture.jpg); background-size:cover; background-position:center; background-repeat: no-repeat; -webkit-filter:grayscale(0); -moz-filter:grascale(1); -o-filter:grayscale(1); -ms-filter:grayscale(1); filter:grayscale(100); -webkit-transition:all 0.3s ease; transition:all 0.3s ease;}
+		.loader-content{ box-sizing:border-box; position:absolute; top:50%; left:50%; width:150px; height:200px; margin-top:-100px; margin-left:-75px; padding:20px; }
+		.loader-content .holi-text{ display: block; width:100%; height:auto; padding-bottom:30px; border-bottom:4px solid #FEFEFE; }
+		.loader-content .loader-percentage{ display: block; text-align:center; font-family:Gotham, Helvetica; color:#FEFEFE; font-size:25px; margin-top:25px; }
+		.loader-content .loader-percentage:after{ content:'%'; font-size:20px; margin-left:5px; }
+		.loader-content svg{ position:absolute; top:0; left:0; }
+		.loader-content svg rect{ transition: all 0.3s ease; }
+	</style>
+	<link rel="stylesheet" href="../styles/css/app.css">
+</head>
+<body>
+
+	<header class="header" style="display:block;">
+		
+		<img src="../medias/images/logo_blanc.png" alt="" class="header-logo">
+		<div class="header-title">
+			<h1 class="header-chapter-name">L'embarquement</h1>
+			<h2 class="header-chapter-mark">Chapitre 1</h2>
+		</div>
+
+	</header>
+
+	<nav class="timeline folded" style="display:block;">
+			
+		<div class="timeline-container">
+			
+			<a href="#" class="timeline-menu-button">
+				<span></span>
+			</a>
+			<a href="#" class="timeline-chapter-mark">1</a>
+
+			<div class="timeline-progress">
+				<div class="timeline-progress-track">
+					<span class="timeline-progress-bar"></span>
+				</div>
+				<div class="timeline-progress-docs">
+					
+				</div>
+			</div>
+
+		</div>
+
+	</nav>
+
+	<main class="main">
+
+		<div class="page page-personna">
+			
+			<div class="background" style="background-image:url(../../storage/6A/cover_chapitre_6A.jpg)"></div>
+
+			<div class="page-container">
+				<div class="personna-content">
+					
+					<h2 class="personna-name">Ajitaa</h2>
+					<h3 class="personna-location">Durban</h3>
+
+					<p class="personna-description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, delectus ut nemo repellendus aspernatur facere optio, quod assumenda tenetur, nihil animi consequuntur numquam necessitatibus obcaecati iure facilis nobis. Non, cumque.<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe eos accusantium voluptatum possimus sed. Quos id, quam necessitatibus earum quibusdam, eos sed et nulla voluptatem iusto vero quae repudiandae veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, fuga molestias rerum iure! Molestias accusantium nisi.<br/><br/>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis dolore, minima, quod molestias aut dolorum, consequuntur inventore vitae vel, unde amet est ut neque sunt qui nulla voluptates pariatur asperiores.<br/><br/>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, delectus ut nemo repellendus aspernatur facere optio, quod assumenda tenetur, nihil animi consequuntur numquam necessitatibus obcaecati iure facilis nobis. Non, cumque.
+					</p>
+
+					<a href="#" class="btn btn-primary btn-continue">Continuer</a>					
+
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+	
+</body>
+</html>
+
+<script src="../../vendors/js/jquery.js"></script>
+<script>
+	
+	$(document).ready(function ()
+	{
+
+
+		setTimeout(function ()
+		{
+			$('.page-next').addClass('show');
+		}
+		, 1000);
+
+		setTimeout(function ()
+		{
+			$('.page-next').addClass('hide').removeClass('show');
+		}
+		, 5000);	
+
+
+	});
+
+</script>

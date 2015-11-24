@@ -1,0 +1,340 @@
+
+
+	/* BASICS */
+
+
+	// Fade
+
+	@keyframes FadeIn {
+
+		0%{
+	
+			opacity:0;
+
+		}
+
+		100%{
+
+			opacity:1;
+
+		}
+
+	}
+
+	@keyframes FadeOut {
+
+		0%{
+	
+			opacity:1;
+
+		}
+
+		100%{
+
+			opacity:0;
+
+		}
+
+	}
+
+
+	// Slide bottom
+
+	@keyframes SlideInBottom {
+
+		0%{
+
+			opacity:0;
+			transform:translateY(- $animation-slide-offset);
+
+		}
+
+		100%{
+	
+			opacity:1;
+			transform:none;
+
+		}
+
+	}
+
+	@keyframes SlideOutBottom {
+
+		0%{
+
+			opacity:1;
+			transform:none;
+
+		}
+
+		100%{
+
+			opacity:0;
+			transform: translateY($animation-slide-offset);
+
+		}
+
+	}
+
+
+	// Slide Right
+
+	@keyframes SlideInRight {
+
+		0%{
+
+			opacity:0;
+			transform:translateX($animation-slide-offset);
+
+		}
+
+		100%{
+
+			opacity:1;
+			transform:none;
+
+		}
+
+	}
+
+	@keyframes SlideOutRight {
+
+		0%{
+
+			opacity:1;
+			transform:none;
+
+		}
+
+		100%{
+
+			opacity:0;
+			transform:translateX(- $animation-slide-offset);
+
+		}
+
+	}
+
+
+	// SlideTop
+
+	@keyframes SlideInTop {
+
+		0%{
+
+			opacity:0;
+			transform:translateY($animation-slide-offset);
+
+		}
+
+		100%{
+
+			opacity:1;
+			transform:none;
+
+		}
+
+	}
+
+	@keyframes SlideOutTop {
+
+		0%{
+
+			opacity:1;
+			transform:none;
+
+		}
+
+		100%{
+
+			opacity:0;
+			transform:translateY(- $animation-slide-offset);
+
+		}
+
+	}
+
+
+	// Bounce
+
+	@keyframes Bounce {
+
+		0%{
+			
+			opacity:0;
+			transform: scale(0.4);
+
+		}
+
+		70%{
+
+			opacity:1;
+			transform: scale(1.2);
+
+		}
+
+		100%{
+
+			opacity:1;
+			transform:scale(1);
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+	/* MENU */
+
+
+	// Hover
+
+	@keyframes MenuButtonHoverEffect {
+
+		0%{
+
+			left:0;
+
+		}
+
+		50%{
+
+			left:2rem;
+
+		}
+
+		100%{
+
+			left:0;
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+	/* CHAPTERS */
+
+
+	// Media
+
+	$scale: 0.88;
+
+	@keyframes NextChapterEnter {
+
+		0%{
+			
+			opacity:0;
+			transform: scale($scale) translate3d(50%, 0, 0);
+
+		}
+
+		50%{
+
+			opacity:1;
+
+		}
+
+		70%{
+			
+			transform:scale($scale);
+
+		}
+
+		100%{
+
+			transform:none;
+
+		}
+
+	}
+
+	@keyframes NextChapterLeave {
+
+		0%{
+			
+			opacity:1;
+			transform: none;
+
+		}
+
+		30%{
+
+			transform:scale($scale);
+
+		}
+
+		50%{
+
+			opacity:1;
+
+		}
+
+		100%{
+			
+			opacity:0;
+			transform:scale($scale) translateX(-50%);
+
+		}
+
+	}
+
+
+
+
+
+	/* HEADER */
+
+
+	// Title
+
+	@keyframes HeaderTitleEnter {
+
+		0%{
+
+			opacity:0;
+			transform: translateX(-2rem);
+
+		}
+
+		100%{
+
+			opacity:1;
+			transform:none;
+
+		}
+
+	}
+
+	@keyframes HeaderTitleLeave {
+
+		0%{
+
+			opacity:1;
+			transform: none;
+
+		}
+
+		100%{
+
+			opacity:0;
+			transform: translateX(-2rem);
+
+		}
+
+	}
+
+
+
+

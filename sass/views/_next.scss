@@ -1,0 +1,160 @@
+
+
+	/* LAYOUT */
+
+
+	&{
+		
+		display: none;
+		justify-content:center;
+		align-items:center;
+		position:absolute;
+		z-index:400;
+		top:0;
+		left:0;
+
+		.page-container{
+			
+			position:relative;
+			z-index:450;
+			width:30rem;
+			text-align:center;
+
+		}
+
+	}
+
+
+
+
+
+
+
+	/* STYLES */
+
+
+	&{
+
+		background-image:url(../assets/medias/images/couverture.jpg);
+		background-size:cover;
+		background-position:center;
+		background-repeat: no-repeat;
+		padding-top:6rem;
+
+		&:after{
+			
+			content:'';
+			position:absolute;
+			z-index:410;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-image:url(../assets/medias/images/filter_very_dark.svg);
+			background-size:cover;
+			background-position:center;
+			background-repeat: no-repeat;
+
+		}
+
+
+		// Chapter
+
+		.chapter-mark{
+			
+			display: block;
+			font-size:1.3rem;
+			text-transform: uppercase;
+			color:rgba($light, 0.6);
+			margin-bottom:1rem;
+
+		}
+
+		.chapter-title{
+
+			font-size:3rem;
+			font-weight: 700;
+			margin-bottom:4rem;
+
+		}
+
+	}
+
+
+
+
+
+
+
+
+	/* ANIMATIONS */
+
+
+	// Show
+
+	&.show{
+		
+		display: flex;
+		animation-name: NextChapterEnter;
+		animation-duration: $animation-chapter-media-duration;
+		animation-timing-function:ease;
+		animation-fill-mode:both;
+
+		.chapter-mark, .chapter-title, .btn-launch{
+
+			animation-name:SlideInRight;
+			animation-duration:0.4s;
+			animation-delay:0.3s;
+			animation-timing-function:ease;
+			animation-fill-mode:both;
+
+		}
+
+		.chapter-title{
+
+			animation-delay: 0.4s;
+
+		}
+
+		.btn-launch{
+
+			animation-delay: 0.5s;
+
+		}
+
+	}
+
+
+	// Hide
+
+	&.hide{
+
+		display: flex;
+		animation-name: NextChapterLeave;
+		animation-duration: $animation-chapter-media-duration;
+		animation-timing-function:ease;
+		animation-fill-mode:both;
+
+		.chapter-mark, .chapter-title, .btn-launch{
+
+			animation-name:SlideOutRight;
+			animation-duration:0.4s;
+			animation-delay:0s;
+			animation-timing-function:ease;
+			animation-fill-mode:both;
+
+		}
+
+		.chapter-title{
+
+			animation-delay: 0.1s;
+
+		}
+
+		.btn-launch{
+
+			animation-delay: 0.2s;
+
+		}
+
+	}

@@ -94,5 +94,75 @@
 			"cover": "cover_chapitre_7",
 			"video": "video_chapitre_7",
 			}
-		]
+		],
+		[
+			{
+			"number": "8",
+			"index": 10,
+			"title": "Ahahah test!",
+			"introduction": "Venez participer au test ahah!",
+			"cover": "cover_chapitre_5",
+			"video": "video_chapitre_5",
+			}
+		],
+		[
+			{
+			"number": "9",
+			"index": 11,
+			"title": "Que la fête commence!",
+			"introduction": "Venez participer au feu de joie!",
+			"cover": "cover_chapitre_3",
+			"video": "video_chapitre_3",
+			}
+		],
+		[
+			{
+			"number": "10",
+			"index": 11,
+			"title": "Que la fête commence!",
+			"introduction": "Venez participer au feu de joie!",
+			"cover": "cover_chapitre_3",
+			"video": "video_chapitre_3",
+			}
+		],
+		[
+			{
+			"number": "11",
+			"index": 11,
+			"title": "Que la fête commence!",
+			"introduction": "Venez participer au feu de joie!",
+			"cover": "cover_chapitre_3",
+			"video": "video_chapitre_3",
+			}
+		],
+		[
+			{
+			"number": "12",
+			"index": 11,
+			"title": "Que la fête commence!",
+			"introduction": "Venez participer au feu de joie!",
+			"cover": "cover_chapitre_3",
+			"video": "video_chapitre_3",
+			}
+		],
+		[
+			{
+			"number": "13",
+			"index": 11,
+			"title": "Que la fête commence!",
+			"introduction": "Venez participer au feu de joie!",
+			"cover": "cover_chapitre_3",
+			"video": "video_chapitre_3",
+			}
+		],
+		[
+			{
+			"number": "14",
+			"index": 11,
+			"title": "Que la fête commence!",
+			"introduction": "Venez participer au feu de joie!",
+			"cover": "cover_chapitre_3",
+			"video": "video_chapitre_3",
+			}
+		],
 	];

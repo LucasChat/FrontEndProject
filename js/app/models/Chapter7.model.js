@@ -1,11 +1,11 @@
 	/* CHAPTER 7 */
 
 
-	chapters.episodes[9] = 
+	chapters.episodes[6] = 
 	{
 		number: 7,
-		index: 9,
-		title: "Le gange",
+		index: 6,
+		title: "Le cavalier prend la dame",
 		type: "video",
 		cover: "cover_chapitre_7",
 		video: "7/video_chapitre_7.mp4",

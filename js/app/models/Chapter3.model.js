@@ -6,7 +6,7 @@
 
 		number: 3,
 		index: 2,
-		title: "Que la fête commence!",
+		title: "Bombe médiatique",
 		type: "video",
 		cover: "cover_chapitre_3",
 		video: "3/video_chapitre_3.mp4",

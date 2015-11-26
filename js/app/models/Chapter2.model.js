@@ -6,7 +6,7 @@
 
 		number: 2,
 		index: 1,
-		title: "Les préparatifs",
+		title: "La colonie du Doc Hanson",
 		type: "video",
 		cover: "cover_chapitre_2",
 		video: "2/video_chapitre_2.mp4",

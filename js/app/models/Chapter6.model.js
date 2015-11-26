@@ -1,10 +1,10 @@
-	/* CHAPTER 5 */
+	/* CHAPTER 6 */
 
 
-	chapters.episodes[4] = 
+	chapters.episodes[5] = 
 	{
-		number: 5,
-		index: 4,
+		number: 6,
+		index: 5,
 		title: "Sauvetage chez Möbius",
 		type: "video",
 		cover: "cover_chapitre_5",

@@ -232,7 +232,7 @@
 				background: url(../assets/medias/images/text_container_presentation.png);
 				position: fixed;
 				top: calc((100% - 600px)/2);
-				right: 50px;
+				right: 75px;
 				padding: 50px;
 				h2 {
 					font-size: 24px;
@@ -275,6 +275,71 @@
 				height: 601px;
 				top: calc((100% - 601px)/2);
 				left: calc((100% - 892px)/2);
+				padding: 50px;
+				h2 {
+					font-size: 24px;
+					font-family: 'Michroma';
+					font-weight: 700;
+					text-transform: uppercase;
+					text-align: center;
+					color: #926c21;
+					margin-bottom: 25px;
+				}
+				p {
+					font-size: 15px;
+					font-family: 'ProximaNova';
+					font-weight: 400;
+					margin: 12.5px 0;
+				}
+			}
+		}
+
+		div.starcraft-factions {
+			z-index: 500;
+			visibility: hidden;
+			.item {
+				visibility: hidden;
+			}
+			.images-factions {
+				position: fixed;
+				width: 274px;
+				height: 625px;
+				top : calc((100% - 625px)/2);
+				right: 75px;
+				z-index: 500;
+
+				.logo {
+					width: 274px;
+					height: 300px;
+					display: block;
+					margin-bottom: 25px;
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+				}
+				.leader {
+					width: 274px;
+					height: 300px;
+					background-repeat: no-repeat;
+					display: block;
+				}
+			}
+			.presentation {
+				&.terran-faction {
+					background: url(../assets/medias/images/contour_terrans_faction.png);
+				}
+
+				&.protoss-faction {
+					background: url(../assets/medias/images/contour_protoss_faction.png);
+				}
+
+				&.zerg-faction {
+					background: url(../assets/medias/images/contour_zergs_faction.png);
+				}
+				position: fixed;
+				width: 475px;
+				height: 560px;
+				top: calc((100% - 560px)/2);
+				left: calc((100% - 475px)/2);
 				padding: 50px;
 				h2 {
 					font-size: 24px;

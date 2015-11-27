@@ -286,6 +286,7 @@
 				this.selection.div = $('.background-starcraft-menu');
 				this.selection.planets = $('.global-planets');
 				this.selection.races = $('.global-races');
+				this.selection.factions = $('.global-factions');
 
 				// création de slide pour la planète
 				this.selection.planets.find('a').click(function(e) {
@@ -297,6 +298,12 @@
 				this.selection.races.find('a').click(function(e) {
 					e.preventDefault();
 					that.createRaceSlide(this.id);
+				});
+
+				// création de slide pour la faction
+				this.selection.factions.find('a').click(function(e) {
+					e.preventDefault();
+					that.createFactionSlide(this.id, $(this).data('logo'), $(this).data('leader'));
 				});
 
 				this.dom.interface.header.menu.click(function (e)
@@ -397,6 +404,7 @@
 			$(element).addClass('current');
 			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
 			$('.starcraft-races').find('.item').css('visibility', 'hidden');
+			$('.starcraft-factions').find('.item').css('visibility', 'hidden');
 			target.addClass('visible');
 		};
 
@@ -405,6 +413,7 @@
 			$('.selection-global').removeClass('visible');
 			$('.starcraft-races').find('.item').css('visibility', 'hidden');
 			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
+			$('.starcraft-factions').find('.item').css('visibility', 'hidden');
 		};
 
 		this.createPlanetSlide = function(id) {
@@ -436,6 +445,7 @@
 			}
 			$('.selection-global').removeClass('visible');
 			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
+			$('.starcraft-factions').find('.item').css('visibility', 'hidden');
 			target.css('visibility', 'visible');
 		};
 
@@ -455,7 +465,47 @@
 				break;
 			}
 			$('.selection-global').removeClass('visible');
+			$('.starcraft-factions').find('.item').css('visibility', 'hidden');
 			target.css('visibility', 'visible');
+		};
+
+		this.createFactionSlide = function(id, logo, leader) {
+			var target;
+			switch(id) {
+				case 'c-dominion':
+					target = $('#dominion');
+				break;
+
+				case 'c-rebelles':
+					target = $('#rebelles');
+				break;
+
+				case 'c-mobius':
+					target = $('#mobius');
+				break;
+
+				case 'c-nerazim':
+					target = $('#nerazim');
+				break;
+
+				case 'c-khalai':
+					target = $('#khalai');
+				break;
+
+				case 'c-taldarim':
+					target = $('#taldarim');
+				break;
+
+				case 'c-essaim':
+					target = $('#essaim');
+				break;
+			}
+			$('.selection-global').removeClass('visible');
+			target.css('visibility', 'visible');
+			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
+			$('.starcraft-races').css('visibility', 'hidden');
+			target.find('.logo').css('backgroundImage', 'url(assets/storage/factions/' + logo + '.png)');
+			target.find('.leader').css('backgroundImage', 'url(assets/storage/factions/' + leader + '.png)');
 		};
 
 

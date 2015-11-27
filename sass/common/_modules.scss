@@ -22,10 +22,10 @@
 		position:relative;
 		z-index:210;
 		padding:1rem 2rem;
-		background-color:$light;
+		// background-color:$light;
 		color:$main;
 		font-weight: 700;
-		border-radius:3rem;
+		// border-radius:3rem;
 		transition:all 0.3s ease;
 		
 		&:after{
@@ -37,8 +37,8 @@
 			left:-0.5rem;
 			width:calc(100% + 1rem);
 			height:calc(100% + 1rem);
-			border-radius: 3rem;
-			background-color:rgba($light, 0.2);
+			// border-radius: 3rem;
+			// background-color:rgba($light, 0.2);
 			transition:all 0.4s ease;
 
 		}

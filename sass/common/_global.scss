@@ -32,16 +32,20 @@
 		.header-title{
 
 			display: inline-block;
+			position: fixed;
+			left:50%;
 			vertical-align: top;
-			margin-left:$padding/2;
+			margin-left:-80px;
 			padding-top:0.3rem;
 
 			.header-chapter-name{
 				
 				display: none;
-				font-size:3rem;
-				font-weight: 700;
+				font-size:3.5rem;
+				font-weight: 400;
 				margin-bottom:0.5rem;
+				font-family: NotJustGroovy;
+				color:#82652d;
 
 			}
 
@@ -50,6 +54,7 @@
 				display: none;
 				font-size:1.5rem;
 				text-transform: uppercase;
+				font-family: NotJustGroovy;
 
 			}
 
@@ -160,8 +165,10 @@
 			position:relative;
 			width:4rem;
 			height:100%;
-			background-color:rgba($light, 0.2);
+			// background-color:rgba($light, 0.2);
 			border-radius:4rem;
+			// transform:rotate(90deg);
+			// bottom:0px;
 
 		}
 
@@ -191,7 +198,7 @@
 				transform:translateX(-50%) translateY(-50%);
 				width:40%;
 				height:3px;
-				background-color:$main;
+				background-color:#a18237;
 				transition:background 0.5s ease;
 
 				&:before, &:after{
@@ -204,7 +211,7 @@
 					display: block;
 					width:100%;
 					height:3px;
-					background-color:$main;
+					background-color:#a18237;
 					transition:transform 0.5s ease;
 
 				}
@@ -242,7 +249,7 @@
 			height:3rem;
 			left:0.5rem;
 			bottom:0.5rem;
-			background-color: $main;
+			background-color: #a18237;
 			border-radius: 50%;
 			font-size:1.1rem;
 			font-weight: 700;
@@ -283,9 +290,9 @@
 					left:0;
 					width:100%;
 					height:0;
-					background-color:$main;
+					background-color:#82652d;
 					transition:height 1s ease;
-
+ 
 				}
 
 			}
@@ -308,20 +315,23 @@
 					position:absolute;
 					bottom:0;
 					left:0;
+					color:#a18237;
+					font-family: NotJustGroovy;
 
 					&:before{
 						
 						position:absolute;
+						background-image: url(../assets/medias/images/btn_decouverte.png);
 						z-index:255;
 						top:0;
-						left:0;
-						width:1.5rem;
-						height:1.5rem;
+						left:-10px;
+						width:44px;
+						height:38px;
 						display: block;
 						content:'';
-						background-color:$main;
-						border:0.4rem solid $light;
-						border-radius:1rem;
+						// background-color:#a18237;
+						// border:0.4rem solid $light;
+						// border-radius:1rem;
 						transition:all 0.3s ease;
 
 					}
@@ -392,18 +402,21 @@
 							opacity:1;
 							transform:none;
 							pointer-events:auto;
-							color:$main;
+							color:#a18237;
 							font-size:1.2rem;
 							font-weight: 700;
 
 							> span{
 								
 								position:relative;
-								top:0.2rem;
-								background-color:$light;
-								padding:1rem 0.2rem 1rem 1.3rem;
+								top:0.5rem;
+								left:-0.8em;
+								// background-color:#22ee22;
+								padding:4rem 0.2rem 1rem 1.3rem;
 								border-top-left-radius:3rem;
 								border-bottom-left-radius:3rem;
+								font-size:24px;
+
 
 								&:after{
 
@@ -414,7 +427,7 @@
 									top:0;
 									height:100%;
 									width:3.1rem;
-									background-color:$light;
+									// background-color:#22ee22;
 									border-top-right-radius: 3rem;
 									border-bottom-right-radius: 3rem;
 

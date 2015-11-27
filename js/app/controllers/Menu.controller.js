@@ -68,7 +68,20 @@
 			this.dom.menu.hover.name = this.dom.menu.hover.elem.find('.chapter-name');
 			this.dom.menu.hover.introduction = this.dom.menu.hover.elem.find('.chapter-introduction');
 			this.dom.menu.fullscreen = this.dom.menu.elem.find('.btn-full-screen');
+			
+			// align menu on mid screen
+			this.verticalAlign($('.aside-left').find('.links-menu'), $('.aside-left'));
+			this.verticalAlignSelection($('.selection-terrans-heroes'));
+			this.verticalAlignSelection($('.selection-protoss-heroes'));
+			this.verticalAlignSelection($('.selection-zergs-heroes'));
 
+			this.verticalAlignSelection($('.selection-terrans-races'));
+			this.verticalAlignSelection($('.selection-protoss-races'));
+			this.verticalAlignSelection($('.selection-zergs-races'));
+
+			this.verticalAlignSelection($('.selection-terrans-factions'));
+			this.verticalAlignSelection($('.selection-protoss-factions'));
+			this.verticalAlignSelection($('.selection-zergs-factions'));
 
 			// Add circles
 			var element = '';
@@ -172,13 +185,16 @@
 				var chapter = chapters.summary[$(this).attr('data-level')][$(this).attr('data-index')];
 				that.dom.menu.hover.name.html(chapter.title);
 				that.dom.menu.hover.introduction.html(chapter.introduction);
-				that.dom.menu.elem.css('background-image', 'url(' + storage.images[chapter.cover].url + ')');
+				// that.dom.menu.elem.css('background-image', 'url(' + storage.images[chapter.cover].url + ')');
 
 			});
 
 			// Click
 			this.dom.menu.circles.click(function (e)
 			{
+				$('.links-menu').find('a').removeClass('current');
+				$('.selection-global').removeClass('visible');
+
 				// Prevent default
 				e.preventDefault();
 
@@ -242,13 +258,13 @@
 			chapter = chapters.summary[0][0];
 			that.dom.menu.hover.name.html(chapter.title);
 			that.dom.menu.hover.introduction.html(chapter.introduction);
-			that.dom.menu.elem.css('background-image', 'url(' + storage.images[chapter.cover].url + ')');
+			//that.dom.menu.elem.css('background-image', 'url(' + storage.images[chapter.cover].url + ')');
 
 			// Show
 			that.dom.menu.elem.addClass('show').removeClass('hide');
 
 			// Menu button update
-			that.dom.interface.timeline.menu.addClass('active');
+			that.dom.interface.header.menu.addClass('active');
 
 		};
 
@@ -263,10 +279,27 @@
 			setTimeout(function (){ that.dom.menu.elem.removeClass('hide'); }, 800);
 
 			// Menu button update
-			that.dom.interface.timeline.menu.removeClass('active');
+			that.dom.interface.header.menu.removeClass('active');
 
 		};
 
+
+
+		// align verticaly menu
+		this.verticalAlign = function(element, container) {
+			this.height = element.height();
+			this.containerHeight = container.height();
+
+			element.css('top', (this.containerHeight - this.height)/2);
+		};
+
+		// align selection content verticaly
+		this.verticalAlignSelection = function(element) {
+			this.height = element.height();
+			this.ulHeight = element.find('ul').height();
+
+			element.css('paddingTop', (this.height - this.ulHeight)/2);
+		}
 
 
 

@@ -1,77 +1,50 @@
 	/* CHAPTER 4 */
 
 
-	chapters.episodes[3] = 
+	chapters.episodes[3] =
 	{
 		number: "4",
 		index: 3,
 		title: "La prophétie de Zeratul",
 		type: "video",
-		cover: "cover_chapitre_4A",
-		video: "4A/video_chapitre_4A.mp4",
+		cover: "cover_chapitre_4",
+		video: "4/video_chapitre_4.mp4",
 		assets: [
 
 			// Diaporama
 			{
-				timestamp: 7,
-				title: "La mythologie Hindou",
+				timestamp: 10,
+				title: "Zeratul",
 				type: "diaporama",
 				pictures: [
 
 					{
-						url: '4A/annexe_1/1.jpg',
-						comment: 'Brahmā est le dieu créateur de l\'hindouisme, le premier membre de la Trimūrti, la trinité des déités hindoues majeures. Brahma est celui qui créé toute chose. Brahmā intervient seulement de façon occasionnelle dans les affaires des dieux, et encore plus rarement dans celles des mortels. Ce dieu est un deus otiosus : bien qu\'étant le Créateur de toutes les créatures vivantes, il n\'y a que quelques temples lui étant totalement dédiés. Il est représenté comme ayant 4 bras et 4 têtes.'
-					},
-					{
-						url: '4A/annexe_1/7.jpg'
-					},
-					{
-						url: '4A/annexe_1/2.jpg',
-						comment: 'Vishnu ou Vishnou est le deuxième dieu de la Trimūrti (également appelée la « trinité hindoue »), avec Brahma et Shiva. La trimourti incarne le cycle de manifestation, conservation et dissolution de l\'univers dont Brahma est le créateur, Vishnou le protecteur et Shiva le destructeur. Vishnou est connu pour ses nombreux avatars. Vishnou est souvent représenté en homme bleu avec une parure royale et quatre bras, tenant généralement une roue, une conque, un lotus et une massue dans ses mains. Vishnou possède également 10 avatars différents.'
-					},
-					{
-						url: '4A/annexe_1/8.jpg'
-					},
-					{
-						url: '4A/annexe_1/3.jpg',
-						comment: 'Shiva est le troisième dieu de la Trimūrti, avec Brahma et Shiva. Le symbolisme de Shiva est d\'une grande complexité du fait des nombreux courants qui l\'ont vénéré au cours des siècles. Shiva est généralement reconnu comme le dieu de la destruction, de l\'illusion et de l\'ignorance. Il représente la destruction, mais celle-ci a pour but la création d\'un monde nouveau : Shiva transforme, et conduit la manifestation à travers le « courant des formes ». L\'emblème de Shiva est le phallus ou lingam, symbole de la création. Il a les yeux mi-clos, car il les ouvre lors de la création du monde et les ferme pour mettre fin à l\'univers et amorcer un nouveau cycle. Il est représenté avec un troisième œil au milieu du front, symbole d\'éternité et de sagesse, et avec un cobra autour du cou, symbole de puissance.'
-					},
-					{
-						url: '4A/annexe_1/6.jpg'
-					},
-					{
-						url: '4A/annexe_1/4.jpg',
-						comment: 'Dans l\’hindouisme Ganesh est le dieu qui supprime les obstacles. Il est aussi le dieu de la sagesse, de l\’intelligence, de l\’éducation et de la prudence, le patron des écoles et des travailleurs du savoir. Reconnaissable à sa tête d\'éléphant, il est sans doute le dieu le plus vénéré en Inde et son aura touche même tout le sous-continent indien et l\'Asie en général. Il est le fils de Shiva et Pârvatî.'
-					},
-					{
-						url: '4A/annexe_1/9.jpg'
-					},
-					{
-						url: '4A/annexe_1/10.jpg',
-						comment: 'Holika est la soeur du roi démon Hiranyakashipu et la tante de Prahlad, qui fut à l\'origine de sa mort. La fête de Holi porte son nom, comme vous le savez déjà.'
-					},
-					{
-						url: '4A/annexe_1/5.jpg',
-						comment: 'Hiranyakashipu est un démon de l\'hindouisme, un asura (un être démoniaque) qui martyrisait son fils Prahlada à cause de sa dévotion au dieu Vishnou. Il était reconnu pour sa grande cruauté, et son invulnérabilité offerte par Brahma le dieu créateur, qui lui offrit de ne pouvoir être tué ni par un homme, ni par un dieu, ni par un animal, ni à l\'extérieur, ni à l\'intérieur, ni au sol, ni en l\'air, ni le jour ni la nuit. Pour le vaincre, Vishnou fut obligé de prendre sa forme de Narasimha, son avatar mi-homme mi-lion. Sous sa forme composite, Narasimha — Vishnou ni homme ni animal, mais mi-homme mi-animal — le tua en le saisissant au seuil d\'une porte (ni à l\'intérieur, ni à l\'extérieur), au crépuscule (ni le jour ni la nuit) et en le maintenant sur son genou (afin qu\'il ne soit ni au sol, ni dans les airs) pour enfin l\'étriper et mettre un terme à son règne de terreur.'
+						url: '../heroes/Zeratul.png',
+						comment: "Zeratul est un Templier noir, un guerrier et assassin psionique de renom dont les ancêtres ont été exilés d’Aïur, monde natal des Protoss, il y a plus de mille ans. Zeratul porte le titre de prélat, et est surtout connu pour son rôle dans la survie des Protoss depuis l’apparition de la menace zerg. </br>C’est Zeratul qui fit oublier ses préjugés à l’exécuteur Tassadar, ce qui permit de commencer à combler le fossé entre Protoss d’Aïur et Templiers noirs, puis de renverser la dictature du Conclave d’Aïur afin de rassembler définitivement les deux factions. </br>Mais Zeratul porte aussi de terribles fardeaux. Pendant qu’il tuait un cérébrat Zerg, celui-ci put à cette occasion puiser dans son esprit la localisation d’Aïur. Et c’est ainsi que furent semés les germes de la ruine de la planète. De plus, ses relations avec la Reine des Lames ont été longues et difficiles, celle-ci l’ayant à plusieurs reprises manipulé puis trahi. </br>Zeratul partit vivre en exil avec une poignée de partisans. Sur Ulaan, une lune autrefois habitée par les Xel’Naga, il mit au jour les fragments d’une prophétie annonçant le rôle clé de Kerrigan à la tête de l’Essaim et l’arrivée imminente d’Amon, le Xel’Naga déchu. </br>Zeratul, qui doit à présent affronter le jugement des siens, et espère que sa foi en la prophétie des Xel’Naga protégera la galaxie de la destruction."
 					}
-
 				]
 			},
-
 			{
-				timestamp: 94,
-				title: "Fête de l'amour ou de l'agriculture",
+				timestamp: 35,
+				title: "Zerg",
 				type: "diaporama",
 				pictures: [
 
 					{
-						url: '4A/annexe_2/1.jpg',
-						comment: 'Holi est aussi connu sous le nom de fête de l\'amour. En effet, principalement dans la région Indienne de Braj, on commémore en fait pendant Holi l\'amour de Radha pour Krishna, deux divinités hindouistes. Dans certaines régions du sud de l\'Inde, certains rendent également grâce à Kâma, le dieu de l\'amour.'
-					},
+						url: '../races/Zerg.png',
+						comment: "Aujourd’hui guidés par la rusée Reine des lames, les horreurs inhumaines zergs sont sur le point de déferler sur la galaxie et menacent de dévorer tous ceux qui se dresseraient sur leur chemin. </br>Lorsque les Zergs arrivèrent dans le secteur de Koprulu, ils étaient tous unis dans leur dévotion absolue à la conscience collective zerg, le Maître-esprit. Le Maître-esprit dirigeait les actions de chaque créature zerg dans l’Essaim par le biais d’une hiérarchie de cérébrats moins puissants. Bien que le Maître-esprit fût guidé avant tout par son désir d’engloutir et d’assimiler la race avancée des Protoss, il décida quand même de se servir des humains, malgré leur manque de sophistication manifeste. En capturant une Terrane aux puissants pouvoirs psioniques, Sarah Kerrigan, le Maître-esprit développa une nouvelle créature unique en son genre : la Reine des Lames. Après la destruction du Maître-esprit par les Protoss pendant l’invasion d’Aïur, la Reine des Lames prit le contrôle de l’Essaim. </br>Les Zergs n’ont rien de commun avec les Terrans et les Protoss. Les nombreuses espèces qui constituent l’Essaim y ont été intégrées par contamination zerg. Ces créatures ont rapidement et soigneusement été transformées en de véritables machines de mort impitoyables pour atteindre l’objectif ultime qui guide les Zergs : exercer une domination absolue. Les Zergs n’ont recours à aucune technologie pour créer leurs armes, leurs armures ou leurs vaisseaux. C’est grâce à l’adaptation biologique et à la mutation organisée de leurs espèces qu’ils parviennent à se défendre et à combattre. Même les bâtiments zergs sont en fait des organes spécialisés au sein de l’organisme vivant et toujours en développement du nid zerg."
+					}
+				]
+			},
+			{
+				timestamp: 78,
+				title: "Aïur",
+				type: "diaporama",
+				pictures: [
 
 					{
-						url: '4A/annexe_2/2.jpg',
-						comment: 'Dans de nombreux textes datant du 17ème siècle, Holi était identifié comme un festival célébrant l\'agriculture, les terres fertiles et surtout les bonnes récoltes des plantations d\'hiver.'
+						url: 'http://media.blizzard.com/sc2/game/planets/aiur.swf',
+						comment: "Au commencement, AÏur est une planète recouverte d’océans et de jungles luxuriantes. De faibles niveaux de gaz à effet de serre et une excentricité orbitale mineure avaient en effet permis le développement de conditions climatiques propices à la vie, ayant ainsi vu naître une grande variété d’espèces. Ceci étant, la forme de vie la plus avancée de la planète était sans conteste celle des Protoss. </br>AÏur avait été le berceau du développement des Protoss, depuis les origines primitives de cette espèce jusqu’à son évolution accélérée par l’action des mystérieux Xel’naga. Le départ de ceux-ci divisa la société protoss et déclencha la guerre civile la plus violente de toute l’histoire de la galaxie : l’Éon de conflits, au cours duquel les principaux continents d’AÏur furent dévastés et de nombreuses formes de vie poussées au bord de l’extinction. </br>Mais au cours des siècles qui suivirent, AÏur connut un véritable âge d’or : ses continents dévastés par la guerre cicatrisèrent, ses espèces se développèrent à nouveau, et de nombreuses cités et temples furent construits à sa surface. La population protoss connut ensuite une rapide croissance jusqu’à atteindre plusieurs milliards d’individus. </br>Malheureusement, cette période de développement exceptionnel fut brusquement interrompue par l’arrivée de l’Essaim. Désireux d’assimiler au plus vite la race protoss, les Zergs lancèrent une invasion à grande échelle sur la planète. Menés par le Maître-esprit, une multitude de Zergs vint rapidement à bout des défenseurs de la planète et commença à semer la destruction sur les continents d’AÏur."
 					}
 				]
 			}

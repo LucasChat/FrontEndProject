@@ -60,6 +60,15 @@
 			}
 		};
 
+		this.selection = {
+			all: null,
+			heroes: null,
+			races: null,
+			factions: null,
+			planets: null,
+			div: null
+		};
+
 
 		// Dimensions
 
@@ -236,6 +245,7 @@
 				// Header
 				this.dom.interface.header.elem = $(storage.templates.header.template);
 				this.dom.interface.header.logo = this.dom.interface.header.elem.find('.header-logo');
+				this.dom.interface.header.menu = this.dom.interface.header.elem.find('.bouton-menu');
 				this.dom.interface.header.title.elem = this.dom.interface.header.elem.find('.header-title');
 				this.dom.interface.header.title.chapterName = this.dom.interface.header.title.elem.find('.header-chapter-name');
 				this.dom.interface.header.title.chapterMark = this.dom.interface.header.title.elem.find('.header-chapter-mark');
@@ -244,7 +254,7 @@
 				// Timeline
 				this.dom.interface.timeline.elem = $(storage.templates.timeline.template);
 				this.dom.interface.timeline.container = this.dom.interface.timeline.elem.find('.timeline-container');
-				this.dom.interface.timeline.menu = this.dom.interface.timeline.elem.find('.timeline-menu-button');
+				// this.dom.interface.timeline.menu = this.dom.interface.timeline.elem.find('.timeline-menu-button');
 				this.dom.interface.timeline.chapterMark = this.dom.interface.timeline.elem.find('.timeline-chapter-mark');
 				this.dom.interface.timeline.progress.elem = this.dom.interface.timeline.elem.find('.timeline-progress');
 				this.dom.interface.timeline.progress.track.elem = this.dom.interface.timeline.progress.elem.find('.timeline-progress-track');
@@ -270,13 +280,34 @@
 				// Menu
 				this.menu = new Menu(this, {});
 				this.menu.init();
-				this.dom.interface.timeline.menu.click(function (e)
+
+				this.selection.all = $('.aside-left').find('.links-menu').find('a');
+				this.selection.heroes = this.selection.all.find('#heroes');
+				this.selection.div = $('.background-starcraft-menu');
+				this.selection.planets = $('.global-planets');
+				this.selection.races = $('.global-races');
+
+				// création de slide pour la planète
+				this.selection.planets.find('a').click(function(e) {
+					e.preventDefault();
+					that.createPlanetSlide(this.id);
+				});
+
+				// création de slide pour la race
+				this.selection.races.find('a').click(function(e) {
+					e.preventDefault();
+					that.createRaceSlide(this.id);
+				});
+
+				this.dom.interface.header.menu.click(function (e)
 				{
 					if(that.is.menu)
 					{
 						// Close menu
-						that.menu.close(); 
+						that.menu.close();
+						$('#btn_pause').hide();
 						that.is.menu = false;
+						that.hideSelection();
 
 						// Relaunch chapter
 						if(that.doc && that.doc.chapter && !that.doc.chapter.is.finished){ that.doc.chapter.play(); } 
@@ -284,13 +315,35 @@
 					else
 					{
 						// Open menu
-						that.menu.open(); 
+						that.menu.open();
+						$('#btn_pause').show(); 
 						that.is.menu = true; 
 
 						// Pause chapter
 						if(that.doc && that.doc.chapter){ that.doc.chapter.pause(); }
 					}
 				});
+
+				this.selection.all.click(function() {
+					var target;
+					switch(this.id) {
+						case 'heroes': 
+							target = $('.global-heroes');
+						break;
+						case 'races': 
+							target = $('.global-races');
+						break;
+						case 'factions': 
+							target = $('.global-factions');
+						break;
+						case 'planets': 
+							target = $('.global-planets');
+						break;
+					}
+					that.displaySelection(target, this);
+				});
+
+
 
 				// Transition
 				this.dom.loader.container.addClass('loaded');
@@ -336,6 +389,73 @@
 				this.dom.interface.header.elem.addClass('show').removeClass('hide');	
 			}
 
+		};
+
+		this.displaySelection = function(target, element) {
+			$('.links-menu').find('a').removeClass('current');
+			$('.selection-global').removeClass('visible');
+			$(element).addClass('current');
+			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
+			$('.starcraft-races').find('.item').css('visibility', 'hidden');
+			target.addClass('visible');
+		};
+
+		this.hideSelection = function() {
+			$('.links-menu').find('a').removeClass('current');
+			$('.selection-global').removeClass('visible');
+			$('.starcraft-races').find('.item').css('visibility', 'hidden');
+			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
+		};
+
+		this.createPlanetSlide = function(id) {
+			var target;
+			switch(id) {
+				case 'c-aiur':
+					target = $('#aiur');
+				break;
+
+				case 'c-char':
+					target = $('#char');
+				break;
+
+				case 'c-korhal':
+					target = $('#korhal');
+				break;
+
+				case 'c-mar-sara':
+					target = $('#mar-sara');
+				break;
+
+				case 'c-shakuras':
+					target = $('#shakuras');
+				break;
+
+				case 'c-tarsonis':
+					target = $('#tarsonis');
+				break;
+			}
+			$('.selection-global').removeClass('visible');
+			$('.starcraft-planets').find('.item').css('visibility', 'hidden');
+			target.css('visibility', 'visible');
+		};
+
+		this.createRaceSlide = function(id) {
+			var target;
+			switch(id) {
+				case 'c-terran':
+					target = $('#terran');
+				break;
+
+				case 'c-protoss':
+					target = $('#protoss');
+				break;
+
+				case 'c-zerg':
+					target = $('#zerg');
+				break;
+			}
+			$('.selection-global').removeClass('visible');
+			target.css('visibility', 'visible');
 		};
 
 

@@ -18,25 +18,280 @@
 
 			display: block;
 			content:'';
-			flex:1;
+			// flex:1;
+			height: 100%;
 
 		}
 
-		&:after{
+		// &:after{
 			
-			display: block;
-			content:'';
-			position:absolute;
-			z-index:510;
-			top:0;
-			left:0;
-			width:100%;
-			height:100%;
-			background-image:url(../assets/medias/images/filter_very_dark.svg);
-			background-size:cover;
-			background-position:center;
-			background-repeat: no-repeat;
+		// 	display: block;
+		// 	content:'';
+		// 	position:absolute;
+		// 	z-index:510;
+		// 	top:0;
+		// 	left:0;
+		// 	width:100%;
+		// 	height:100%;
+		// 	background-image:url(../assets/medias/images/filter_very_dark.svg);
+		// 	background-size:cover;
+		// 	background-position:center;
+		// 	background-repeat: no-repeat;
 
+		// }
+
+		.starcraft-menu {
+			.background-starcraft-menu {
+				display: block;
+				background: rgba(0,0,0,0.6);
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+			}
+
+			aside.aside {
+				position: absolute;
+				top: 0;
+				z-index : 999;
+				&.aside-left {
+					left: 0;
+					width: 200px;
+					height: 100%;
+					padding-left: 25px;
+					padding-top: 25px;
+					.links-menu {
+						position: absolute;
+						top: 0;
+						left: 25px;
+						width: 150px;
+						// &.visible {
+						// 	left: 25px;
+						// }
+						a {
+							display : block;
+							font-size: 25px;
+							line-height: 48px;
+							font-family: NotJustGroovy;
+							color: #fff;
+							text-decoration: none;
+							position: relative;
+							margin-bottom: 50px;
+							&:hover {
+								color: #8d7338;
+							}
+							&.current {
+								color: #8d7338;
+								&:before {
+									content : '';
+									position: absolute;
+									top: 0;
+									left: -15px;
+									width: 6px;
+									height: 48px;
+									background-image: url(../assets/medias/images/bordure_menu_gauche.png);
+								}
+								&:after {
+									content : '';
+									position: absolute;
+									top: 0;
+									right: 15px;
+									width: 6px;
+									height: 48px;
+									background-image: url(../assets/medias/images/bordure_menu_droite.png);
+								}
+							}
+						}
+					}
+				}
+			}
+
+			section.selection-global {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				// padding-top: 75px;
+				height: 565px;
+				top: calc((100% - 565px)/2);
+				text-align: center;
+				&.global-heroes,
+				&.global-races,
+				&.global-factions,
+				&.global-planets {
+					visibility: hidden;
+					&.visible {
+						visibility: visible;
+					}
+				}
+				h1 {
+					text-transform: uppercase;
+					font-size: 25px;
+					font-family: Michroma;
+					color: #8d7338;
+					word-spacing: 25px;
+				}
+				div.selection {
+					position: relative;
+					padding-top: 25px;
+					padding-left: calc((100% - 972px)/2);
+					div {
+						display: block;
+						float:left;
+				    text-align: center;
+				    margin-right: 25px;
+					}
+					.planet-item {
+						margin-right: 200px;
+						margin-bottom: 25px;
+						@media screen and (min-width: 1920px) {
+							margin-right: 300px;
+						}
+						&:nth-child(3n) {
+							margin-right: 0;
+						}
+						a {
+							display: block;
+							text-decoration: none;
+							&:hover {
+								color: #8d7338;
+							}
+							h2 {
+								font-size: 16px;
+								line-height: 24px;
+								font-family: 'Michroma';
+								text-transform: uppercase;
+							}
+						}
+					}
+					.selection-terrans  {
+						position: relative;
+						width: 290px;
+						height: 494px;
+						max-height: 494px;
+						background: url(../assets/medias/images//cadre_races_terrans.png);
+					}
+					.selection-protoss  {
+						position: relative;
+						width: 322px;
+						height: 515px;
+						background: url(../assets/medias/images/cadre_races_protoss.png);
+					}
+					.selection-zergs  {
+						position: relative;
+						width: 310px;
+						height: 511px;
+						background: url(../assets/medias/images/cadre_races_zergs.png);
+					}
+					ul {
+						li {
+							a {
+								font-size: 16px;
+								line-height: 24px;
+								font-family: NotJustGroovy;
+								color: #fff;
+								text-decoration: none;
+								&:hover {
+									color: #8d7338;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		div.starcraft-planets {
+			position: fixed;
+			top: 0;
+			left: 200px;
+			height: 100%;
+			width: calc(100% - 600px);
+			z-index: 500;
+			visibility: hidden;
+			.item {
+				visibility: hidden;
+			}
+			.planet {
+				width: 40%;
+				position: fixed;
+				left: 200px;
+				top: calc((100% - 500px)/2);
+				object {
+					width: 100%;
+					height: 500px;
+				}
+			}
+			.presentation {
+				// display: block;
+				height: 600px;
+				width: 545px;
+				background: url(../assets/medias/images/text_container_presentation.png);
+				position: fixed;
+				top: calc((100% - 600px)/2);
+				right: 50px;
+				padding: 50px;
+				h2 {
+					font-size: 24px;
+					font-family: 'Michroma';
+					font-weight: 700;
+					text-transform: uppercase;
+					text-align: center;
+					color: #926c21;
+					margin-bottom: 25px;
+				}
+				p {
+					font-size: 15px;
+					font-family: 'ProximaNova';
+					font-weight: 400;
+					margin: 12.5px 0;
+				}
+			}
+		}
+
+		div.starcraft-races {
+			z-index: 500;
+			visibility: hidden;
+			.item {
+				visibility: hidden;
+			}
+			.presentation {
+				&.terran-prez {
+					background: url(../assets/medias/images/cadre_terran_description.png);
+				}
+
+				&.protoss-prez {
+					background: url(../assets/medias/images/cadre_protoss_description.png);
+				}
+
+				&.zerg-prez {
+					background: url(../assets/medias/images/cadre_zergs_description.png);
+				}
+				position: fixed;
+				width: 892px;
+				height: 601px;
+				top: calc((100% - 601px)/2);
+				left: calc((100% - 892px)/2);
+				padding: 50px;
+				h2 {
+					font-size: 24px;
+					font-family: 'Michroma';
+					font-weight: 700;
+					text-transform: uppercase;
+					text-align: center;
+					color: #926c21;
+					margin-bottom: 25px;
+				}
+				p {
+					font-size: 15px;
+					font-family: 'ProximaNova';
+					font-weight: 400;
+					margin: 12.5px 0;
+				}
+			}
 		}
 
 		.btn-full-screen{
@@ -72,7 +327,9 @@
 			opacity:0;
 			align-items: center;
 			justify-content:center;
-			position:relative;
+			position:absolute;
+			bottom: -40px;
+			left: 0;
 			z-index:550;
 			width:100%;
 			height:auto;
@@ -100,13 +357,14 @@
 				display: flex;
 				justify-content:center;
 				align-items:center;
-				color:$main;
+				color:#fff;
 				font-weight: 700;
-				width: 3rem;
-				height: 3rem;
-				background-color: #FFF;
+				width: 43px;
+				height: 43px;
+				// background-color: #FFF;
 				margin-bottom:5rem;
-				border-radius:50%;
+				// border-radius:50%;
+				background-image: url(../assets/medias/images/timeline.png);
 				cursor:pointer;
 				transition:all 0.2s ease;
 
@@ -114,9 +372,9 @@
 				// Hover
 
 				&:hover{
-
-					background-color:$main;
-					color:$light;
+					background-image: url(../assets/medias/images/timeline_actuelle.png);
+					// background-color:$main;
+					color:transparent;
 
 				}
 
@@ -142,15 +400,19 @@
 			opacity:0;
 			flex:1;
 			padding:0 2.5rem;
+			// position: fixed;
+			// top: 0;
 			position: relative;
-			z-index:550;
-			
+			margin-top: -120px;
+			// z-index:550;
+
 			.chapter-name{
 				
 				display: block;
 				font-size:2rem;
 				font-weight:700;
-				margin-bottom:1rem;
+				font-family: 'NotJustGroovy';
+				// margin-bottom:1rem;
 
 			}
 
@@ -189,10 +451,10 @@
 
 	&{
 
-		background-image:url(../assets/medias/images/test_couverture_chapter.jpg);
-		background-size:cover;
-		background-position:center;
-		background-repeat: no-repeat;
+		// background-image:url(../assets/medias/images/test_couverture_chapter.jpg);
+		// background-size:cover;
+		// background-position:center;
+		// background-repeat: no-repeat;
 
 	}
 

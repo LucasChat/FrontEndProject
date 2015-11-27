@@ -1,23 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1024px" height="700px" viewBox="0 0 1024 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>Rectangle 7</title>
-    <desc>Created with Sketch.</desc>
-    <defs>
-        <linearGradient x1="-4.90125974%" y1="0%" x2="106.189904%" y2="100%" id="linearGradient-1">
-            <stop stop-color="#1E86D3" offset="0%"></stop>
-            <stop stop-color="#C401E1" offset="100%"></stop>
-        </linearGradient>
-        <rect id="path-2" x="61" y="20" width="1027" height="702"></rect>
-    </defs>
-    <g id="ANNEXES" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="Diaporama-Texte" sketch:type="MSArtboardGroup">
-            <g id="Backgrounds" sketch:type="MSLayerGroup" transform="translate(-64.000000, -22.000000)">
-                <g id="Rectangle-7">
-                    <use fill-opacity="0.8" fill="url(#linearGradient-1)" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
-                    <use fill-opacity="0.3" fill="#000000" xlink:href="#path-2"></use>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="32 -70 1024 700" style="enable-background:new 32 -70 1024 700;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{fill:url(#path-2_2_);fill-opacity:0.6;}
+	.st3{fill:url(#path-2_5_);fill-opacity:0.3;}
+	.st4{display:inline;fill:none;}
+	.st5{font-family:'MyriadPro-Regular';}
+	.st6{font-size:12px;}
+	.st7{opacity:0.7;fill:url(#SVGID_1_);stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g id="Calque_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" class="st0">
+	<title>Rectangle 6</title>
+	<desc>Created with Sketch.</desc>
+	<g id="ANNEXES" sketch:type="MSPage" class="st1">
+		<g id="Diaporama-Texte" sketch:type="MSArtboardGroup">
+			<g id="Backgrounds" transform="translate(-64.000000, -22.000000)" sketch:type="MSLayerGroup">
+				<g id="Rectangle-6">
+					<g sketch:type="MSShapeGroup">
+						<linearGradient id="path-2_2_" gradientUnits="userSpaceOnUse" x1="93" y1="301" x2="1120" y2="301">
+							<stop  offset="0" style="stop-color:#FFFFFF"/>
+							<stop  offset="1" style="stop-color:#000000"/>
+						</linearGradient>
+						<rect id="path-2" x="93" y="-50" class="st2" width="1027" height="702"/>
+					</g>
+					<g>
+						<linearGradient id="path-2_5_" gradientUnits="userSpaceOnUse" x1="93" y1="301" x2="1120" y2="301">
+							<stop  offset="0" style="stop-color:#FFFFFF"/>
+							<stop  offset="1" style="stop-color:#000000"/>
+						</linearGradient>
+						<rect id="path-2_1_" x="93" y="-50" class="st3" width="1027" height="702"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="Calque_3" class="st0">
+	<rect x="675.1" y="337.6" class="st4" width="387" height="9"/>
+	<text transform="matrix(1 0 0 1 675.084 346.1074)" class="st1 st5 st6">afhidvcodcjdjdoi</text>
+</g>
+<g id="Calque_2">
+	
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="28.1106" y1="282.6362" x2="1061.0784" y2="282.6362" gradientTransform="matrix(1.01 0.6485 -0.8648 1.3469 238.3556 -453.8574)">
+		<stop  offset="0" style="stop-color:#000000"/>
+		<stop  offset="1" style="stop-color:#2D2D2D"/>
+	</linearGradient>
+	<polygon class="st7" points="750.1,630 32,630 32,390.1 32,-70 334.6,-70 1056,-70 1056,135.1 1056,630 	"/>
+</g>
 </svg>

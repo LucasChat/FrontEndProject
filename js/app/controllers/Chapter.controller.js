@@ -94,6 +94,9 @@
 			this.dom.media.load();
 			this.dom.chapter.media = $(this.dom.chapter.media).addClass('page-chapter-media');
 			this.dom.chapter.elem.append(this.dom.chapter.media);
+			this.dom.chapter.elem.append('<img id="btn_pause" style="position:fixed;margin:auto;z-index:9999;display:none;left:50%;margin-left:-45px;top:50%;margin-top:-45px;" src="assets/medias/images/pause.png" alt="pause">');
+			this.dom.chapter.btn_pause = $('#btn_pause');
+
 			this.dom.media.oncanplay = function ()
 			{
 				that.initAfterLoad();
@@ -118,7 +121,7 @@
 				this.timestamps[this.model.assets[i].timestamp] = i;
 
 				// Add pellet
-				this.dom.pellets[i] = $('<a href="#" data-index="' + i + '"><span><span>' + this.model.assets[i].title + '</span></span></a>');
+				this.dom.pellets[i] = $('<a href="#" data-index="' + i + '"><span><span>' + this.model.assets[i].title + '</span></span></a>'); //<span><span>' + this.model.assets[i].title + '</span></span>
 				this.dom.pellets[i].css('bottom', this.model.assets[i].timestamp*this.time.progress + 20);
 				this.dom.pellets[i].click(function (e)
 				{
@@ -155,9 +158,13 @@
 				e.stopPropagation();
 				if(!that.is.finished)
 				{
-					if(that.is.paused){ that.play(); }
-					else{ that.pause(); }
+					if(that.is.paused){ that.play(); $('#btn_pause').hide(); }
+					else{ that.pause(); $('#btn_pause').show(); }
 				}
+			});
+
+			$('#btn_pause').click(function(){
+				that.dom.chapter.media.trigger('click');
 			});
 
 			// Fill DOM Choice
@@ -239,6 +246,8 @@
 				// Update state
 				this.is.playing = true;
 				this.is.paused = false;
+
+				$('#btn_pause').hide();
 
 				// Launch interval
 				this.interval = setInterval(this.update, 1000);

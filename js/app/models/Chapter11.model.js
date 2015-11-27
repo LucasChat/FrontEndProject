@@ -1,70 +1,26 @@
 	/* CHAPTER 11 */
 
 
-	chapters.episodes[10] = 
+	chapters.episodes[10] =
 	{
 		number: "11",
 		index: 10,
 		title: "Sauvetage d'un mort",
 		type: "video",
-		cover: "cover_chapitre_4B",
-		video: "4B/video_chapitre_4B.mp4",
+		cover: "cover_chapitre_11",
+		video: "11/video_chapitre_11.mp4",
 		assets: [
 
 			{
-				timestamp: 13, 
-				title: "Holi dans les pays voisins",
+				timestamp: 13,
+				title: "Korhal IV",
 				type: "diaporama",
 				pictures: [
 
 					{
-						url: '4B/annexe_1/1.jpg',
-						comment: 'Au Népal, plus de 80% de la population est hindouiste et Holi y est donc célébré comme un festival national.'
-					},
-
-					{
-						url: '4B/annexe_1/2.jpg',
-						comment: 'Bien que la religion majoritaire soit l\'Islam, de nombreux musulmans se joignent à la communauté hindouiste pour fêter Holi.'
-					},
-
-					{
-						url: '4B/annexe_1/3.jpg',
-						comment: 'Près de 60% de ses habitants étant hindouistes, l\'Ile Maurice fête également Holi.'
-					},
-
-					{
-						url: '4B/annexe_1/4.jpg',
-						comment: 'Au Pakistan, environ 4% de la population est hindouiste. Le jour de Holi, en plus de la bataille de couleurs, il est traditionnel de casser un pot en le jetant du haut d\'une pyramide humaine.'
+						url: 'http://media.blizzard.com/sc2/game/planets/korhal.swf',
+						comment: "Quatrième monde du système de Korhal, la planète (dont le nom Korhal IV est généralement raccourci en « Korhal ») était initialement recouverte d’une végétation luxuriante et bénéficiait d’un climat tempéré. Elle fut découverte et colonisée par des colons tarsoniens et devint rapidement un des membres les plus importants parmi les treize principaux mondes confédérés grâce à ses contributions à plusieurs développements militaires et technologiques. </br>Avec le temps, la population réclama de faire sécession avec la Confédération, avec à leur tête le sénateur Angus Mengsk. La réponse de la Confédération fut l’envoi de fantômes dans le but d’éliminer le sénateur Mengsk, puis le bombardement nucléaire de Korhal IV, à la suite duquel ses milliards d’habitants perdirent la vie et la planète verdoyante fut transformée en un désert radioactif de verre noir. </br>Lorsqu’Arcturus Mengsk, fils du sénateur Angus Mengsk renversa la Confédération terrane et s’autoproclama empereur du nouveau Dominion Terran, une de ses premières décisions fut de lancer la reconstruction de Korhal IV, qu’il choisit comme monde-capital. De véritables fortunes ont depuis été investies dans l’assainissement et la reconstruction de Korhal IV. Les défenses de la planète ont été considérablement renforcées depuis l’arrivée au pouvoir de Mengsk, ce dernier ayant en effet décidé de faire de Korhal IV la planète la mieux fortifiée de tout le secteur de Koprulu."
 					}
-
-				]
-			},
-			{
-				timestamp: 29,
-				title: "Holi en Occident",
-				type: "diaporama",
-				pictures: [
-
-					{
-						url: '4B/annexe_2/1.jpg',
-						comment: 'Un Color Run à Paris, qui s\'inspire directement de la fête de Holi'
-					},
-					
-					{
-						url: '4B/annexe_2/2.jpg',
-						comment: 'Un Color Run à Berlin'
-					},
-
-					{
-						url: '4B/annexe_2/3.jpg',
-						comment: 'Un Color Run à New-York'
-					},
-
-					{
-						url: '4B/annexe_2/4.jpg',
-						comment: 'Un Color Run à Montreal'
-					}
-
 				]
 			}
 		]

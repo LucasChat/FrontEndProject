@@ -38,7 +38,7 @@
 		.page-title{
 
 			font-size:8rem;
-			font-family: $font-thematic;
+			font-family: Michroma;
 			letter-spacing: 1.5rem;
 			text-transform: uppercase;
 			text-shadow:1px 1px 1px rgba($dark, 0.2);
@@ -50,12 +50,18 @@
 
 		.page-text{
 
-			font-size:1.2rem;
-			padding:0 5rem;
-			line-height: 1.2;
+			font-size:1.3rem;
+			line-height: 1.5;
 			font-weight: 700;
-			text-shadow:1px 1px 1px rgba($dark, 0.2);
-			margin-bottom:6rem;
+			text-shadow:1px 1px 1px rgba($dark, 0.4);
+			margin-top:3.8rem;
+			margin-bottom:4rem;
+
+		}
+
+		.block-share{
+
+			padding-top:3.5rem;
 
 		}
 

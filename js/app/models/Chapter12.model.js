@@ -1,70 +1,39 @@
 	/* CHAPTER 12 */
 
 
-	chapters.episodes[11] = 
+	chapters.episodes[11] =
 	{
 		number: "12",
 		index: 11,
 		title: "Narud doit tomber",
 		type: "video",
-		cover: "cover_chapitre_4B",
-		video: "4B/video_chapitre_4B.mp4",
+		cover: "cover_chapitre_12",
+		video: "12/video_chapitre_12.mp4",
 		assets: [
 
 			{
-				timestamp: 13, 
-				title: "Holi dans les pays voisins",
+				timestamp: 04,
+				title: "Alexei Stukov",
 				type: "diaporama",
 				pictures: [
 
 					{
-						url: '4B/annexe_1/1.jpg',
-						comment: 'Au Népal, plus de 80% de la population est hindouiste et Holi y est donc célébré comme un festival national.'
-					},
-
-					{
-						url: '4B/annexe_1/2.jpg',
-						comment: 'Bien que la religion majoritaire soit l\'Islam, de nombreux musulmans se joignent à la communauté hindouiste pour fêter Holi.'
-					},
-
-					{
-						url: '4B/annexe_1/3.jpg',
-						comment: 'Près de 60% de ses habitants étant hindouistes, l\'Ile Maurice fête également Holi.'
-					},
-
-					{
-						url: '4B/annexe_1/4.jpg',
-						comment: 'Au Pakistan, environ 4% de la population est hindouiste. Le jour de Holi, en plus de la bataille de couleurs, il est traditionnel de casser un pot en le jetant du haut d\'une pyramide humaine.'
+						url: '../heroes/AlexeiStukov.png',
+						comment: "Alexeï Stukov est le vice-amiral de l'expédition du Directoire de la Fédération Terrienne (DFT), envoyé par la Terre pour prendre possession du secteur de Koprulu. Il assiste efficacement son ami et supérieur l'amiral Gérard DuGalle. </br>Il s'oppose pourtant à la destruction du perturbateur psi, une machine capable d'influer sur l'esprit des Zergs. Se défiant de l’ancien confédéré Samir Duran ayant récemment rejoint les rangs du DFT, il désobéit aux ordres et il conserve le perturbateur psi secrètement sur Braxis. </br>Quand son supérieur l'apprend, il envoie le fraîchement promu lieutenant Samir Duran le mettre en état d'arrestation, mais ce dernier l'exécute sans pitié. Son corps est ensuite volé par le docteur Emil Narud qui expérimente sur lui un traitement visant à fusionner les ADN Zerg et Humaine. Revenu à la vie, Stukov s’échappe du laboratoire de Narud avec la ferme intention de se venger de celui qui l’a transformé en monstre."
 					}
-
 				]
 			},
 			{
-				timestamp: 29,
-				title: "Holi en Occident",
+				timestamp: 36,
+				title: "Contingent Möbius",
 				type: "diaporama",
 				pictures: [
 
 					{
-						url: '4B/annexe_2/1.jpg',
-						comment: 'Un Color Run à Paris, qui s\'inspire directement de la fête de Holi'
-					},
-					
-					{
-						url: '4B/annexe_2/2.jpg',
-						comment: 'Un Color Run à Berlin'
-					},
-
-					{
-						url: '4B/annexe_2/3.jpg',
-						comment: 'Un Color Run à New-York'
-					},
-
-					{
-						url: '4B/annexe_2/4.jpg',
-						comment: 'Un Color Run à Montreal'
+						url: '../factions/LogoMobius.png',
+						url: '../factions/LeaderFondationMöbius.png',
+						comment: "Le contingent Möbius est la force armée privée du super-laboratoire Möbius, dirigé par le docteur Narud. Initialement dédié à l’autoprotection des laboratoires de recherche situés en zone hostile, le contingent Möbius s’est peu à peu transformé en une force para-militaire d’assaut fiable et organisée. </br>Cette nouvelle armée privée, frisant le fanatisme envers leur employeur et équipée des meilleurs technologies et armements produits par Möbius, se bat férocement jusqu’à la destruction de leur ennemis… ou la sienne."
 					}
-
 				]
 			}
 		]

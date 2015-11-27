@@ -40,8 +40,8 @@
 			"index": 3,
 			"title": "La prophétie de Zeratul",
 			"introduction": "",
-			"cover": "cover_chapitre_4A",
-			"video": "video_chapitre_4A",
+			"cover": "cover_chapitre_4",
+			"video": "video_chapitre_4",
 			}
 		],
 		[

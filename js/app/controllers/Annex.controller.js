@@ -96,21 +96,17 @@
 			// Slide
 			this.dom.annex.slider.slides[index] = $('<div class="slide"></div>');
 
-			// Slide content
-			if(this.model.pictures[index].comment)
-			{
-				this.dom.annex.slider.slides[index].addClass('slide-content').append($('<p>' + that.model.pictures[index].comment + '</p>'));
-			}
+			
 
 			// Image
 			var image = new Image();
 			//var src = 'storage/' + this.model.pictures[index].url;
-			var src = 'assets/storage/chapters/' + this.model.pictures[index].url;
+			var src = 'assets/medias/images/starcraft_presentation_personnage_background.jpg' 
 			image.onload = function ()
 			{
 				// Insert in slide
 				that.dom.annex.slider.slides[index].css('background-image', 'url(' + src + ')');
-
+				console.log(that.dom.annex.slider.slides[index]);
 				// Append slide
 				that.dom.annex.slider.container.append(that.dom.annex.slider.slides[index]);
 				
@@ -118,8 +114,42 @@
 				if(index < that.slider.total - 1){ that.initSlide(index+1); }
 				else{ that.callbacks.onLoaded(); }
 
+
+				that.dom.annex.slider.slides[index].append('<img id="heroe-picture">')
+				$("#heroe-picture").attr("src","assets/storage/chapters/" + that.model.pictures[index].url);
+				$('#heroe-picture').css({
+      				'zIndex': '800',
+      				"display": "block",
+      				'height': '550px',
+      				'backgroundRepeat': 'no-repeat',
+      				'position': 'absolute',
+      				'left': '20%',
+      				'top': '20%'
+    			});
+
+    			that.dom.annex.slider.slides[index].append('<div id="heroe-presentation-container"></div>');
+    			$("#heroe-presentation-container").css({
+    				"backgroundImage": "url(assets/medias/images/text_container_presentation.png)",
+      				'zIndex': '800',
+      				"display": "block",
+      				'width': '545px',
+      				'height': '600px',
+      				'backgroundRepeat': 'no-repeat',
+      				'position': 'absolute',
+      				'right': '20%',
+      				'top': '20%',
+    			});
+
+    			$("#heroe-presentation-container").addClass('slide-content').append($('<div style="margin-top:-43px;padding-left:43px;font-size:34px;font-family:Michroma;">' + that.model.title + '</div>'));
+
+    			// Slide content
+				if(that.model.pictures[index].comment)
+				{
+					$("#heroe-presentation-container").addClass('slide-content').append($('<div style="padding:43px;padding-top:53px;font-size:16px;font-family:ProximaNova;line-height:20px;">' + that.model.pictures[index].comment + '</div>'));
+				}
+
 			};
-			image.src = 'assets/storage/chapters/' + this.model.pictures[index].url;
+			image.src = 'assets/medias/images/starcraft_presentation_personnage_background.jpg';
 
 		};
 

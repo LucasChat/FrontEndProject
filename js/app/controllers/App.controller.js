@@ -384,6 +384,7 @@
 				if(this.doc && this.doc.chapter && this.doc.chapter.is.playing)
 				{
 					this.dom.interface.header.elem.addClass('hide').removeClass('show');
+					$('body').css('cursor', 'none');
 				}
 				else
 				{
@@ -393,7 +394,8 @@
 			}
 			else
 			{
-				this.dom.interface.header.elem.addClass('show').removeClass('hide');	
+				this.dom.interface.header.elem.addClass('show').removeClass('hide');
+				$('body').css('cursor', 'auto');	
 			}
 
 		};
